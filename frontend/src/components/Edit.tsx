@@ -21,12 +21,13 @@ function Edit() {
         fetchData();
     }, [id]);
 
-    function handleChangeFilmField(e: React.ChangeEvent<HTMLInputElement>) {
-        setFilmFields({
-            ...filmFields,
-            [e.target.name]: e.target.value
-        });
-    }
+    const handleChangeFilmField = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const { name, type, checked, value } = e.target;
+        setFilmFields((prevFields) => ({
+            ...prevFields,
+            [name]: type === "checkbox" ? checked : value,
+        }));
+    };
 
     function handleBack() {
         navigate("/home");
