@@ -2,6 +2,10 @@
 
 ## <span style="color: #6DA7D8"> Project Description
 
+Project conducted by Constantin Ecaterina. Github link: 
+
+https://github.com/EcaterinaCnt/cinema-app.git
+
 This repository contains the implementation of a **Cinema Management Application**. The project is a full-stack application with a **Django** backend and a **React** frontend, allowing users to perform CRUD operations for managing movies and reservations.
 
 ## <span style="color: #6DA7D8"> Getting Started
